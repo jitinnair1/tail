@@ -1,0 +1,41 @@
+# Site settings
+title:          Tail
+description:    "Minimal Jekyll blog theme"
+baseurl:        "/tail"
+url:
+
+# Google Analytics
+google_analytics:
+
+# Author
+author:
+  name:         Jitin Nair
+  url:          https://jitin.xyz
+  email:        hello@jitin.xyz
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude:
+
+# Disqus (Set to your disqus id)
+disqus:
