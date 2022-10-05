@@ -4,6 +4,9 @@ description:    "Minimal Jekyll blog theme"
 baseurl:        "/tail"
 url:
 
+# https://jekyllrb.com/docs/configuration/options/
+timezone: Asia/Kolkata
+
 # Google Analytics
 google_analytics:
 
