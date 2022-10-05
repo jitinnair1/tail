@@ -2,6 +2,7 @@
 layout: post
 title: "Sticky Posts"
 author: "Jitin"
+date: 17th Sept 2022
 tags: Tutorial
 excerpt_separator: <!--more-->
 ---

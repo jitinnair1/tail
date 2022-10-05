@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pagination Post"
+date: 20th Sept 2022
 author: "Jitin"
 tags: Tail
 ---

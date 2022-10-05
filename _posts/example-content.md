@@ -2,6 +2,7 @@
 layout: post
 title: "Example Content"
 author: "Jitin"
+date: 4th Oct 2022
 tags: Example
 excerpt_separator: <!--more-->
 ---
@@ -74,15 +75,15 @@ Check out tale on [GitHub](https://github.com/chesterhow/tale).
 
 # Images
 {% highlight markdown %}
-![Placeholder image](https://placehold.it/800x400 "Placeholder image")
+![An image](url "Alt Text")
 
-![Image with caption](https://placehold.it/700x400 "Image with caption")
+![Image with caption](url "Image with caption")
 _This is an image with a caption_
 {% endhighlight %}
 
-![Placeholder image](https://placehold.it/800x400 "Placeholder image")
+![An image](https://images.unsplash.com/photo-1664784805210-9fa665e2b7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 "An image")
 
-![Image with caption](https://placehold.it/700x400 "Image with caption")
+![Image with caption](https://images.unsplash.com/photo-1527697911963-20cb424e9608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1486&q=80 "Image with caption")
 _This is an image with a caption_
 
 # Code and Syntax Highlighting
