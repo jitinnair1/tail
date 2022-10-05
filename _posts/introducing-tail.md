@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introducing Tail"
-date: 6th Oct 2022
+date: 5th Oct 2022
 author: "Jitin"
 comments: false
 tags: Tail
