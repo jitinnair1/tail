@@ -19,6 +19,3 @@ You can customise the excerpt (the text displayed below each post on the homepag
 
 This follows [Jekyll's recommended way of managing excerpts](https://jekyllrb.com/docs/posts/#post-excerpts).
 
-## Example
-
-See [this post](https://github.com/chesterhow/tale/blob/master/_posts/2021-04-30-managing-excerpt.md) or the ["Introducing Tale" post](https://github.com/chesterhow/tale/blob/master/_posts/2017-03-29-introducing-tale.md).
