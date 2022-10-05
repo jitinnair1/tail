@@ -1,15 +1,24 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Jitin"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+How do take an already amazing theme like [Tale](https://github.com/chesterhow/tale) and make it better? Yeah, dark-mode. That and some more is what led to this theme called Tail (as a hat tip to the original theme of course)
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+## What's new in Tail
+- Dark Mode
+- Support for posts without the `YYYY-MM-DD` in post's filename
+- Bi-directional Wiki-style linking support compatible with Obsidian
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+## Some great features from the original Tale
+- Compatible with GitHub Pages
+- Responsive design (looks just as good on mobile)
+- Syntax highlighting, with the help of Pygments
+- Markdown and HTML text formatting
+- Pagination of posts
+- Sticky posts
+- Tags
+- Excerpt management
+- Disqus comments
