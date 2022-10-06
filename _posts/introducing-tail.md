@@ -10,7 +10,7 @@ sticky: true
 hidden: true
 ---
 
-How do take an already amazing theme like [Tale](https://github.com/chesterhow/tale) and make it better? Yeah, dark-mode. That and some more is what led to this theme called Tail (as a hat tip to the original theme of course)
+How do take an already amazing theme like [Tale](https://github.com/chesterhow/tale) and make it better? Yeah, dark-mode. That and some more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course)
 
 <!--more-->
 
