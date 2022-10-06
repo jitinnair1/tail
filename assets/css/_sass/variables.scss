@@ -9,6 +9,18 @@ $white: #fff !default;
 $blue: #4a9ae1 !default;
 $shadow-color: rgba(0, 0, 0, .2) !default;
 $code-color: #bf616a !default;
+$body-bg: #fff;
+
+
+// Colors
+$default-color-dark: #98a0ac;
+$default-shade-dark: #353535;
+$default-tint-dark: #aaa;
+$shadow-color-dark: rgba(0, 0, 0, .2);
+$code-color-dark: #bf616a;
+$body-bg-dark: #23272d;
+
+
 
 // Fonts
 $serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
@@ -18,12 +30,12 @@ $monospaced: Menlo, Monaco, monospace !default;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
-     -moz-box-sizing: $type;
-          box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
 }
 
 @mixin transition($args...) {
   -webkit-transition: $args;
-     -moz-transition: $args;
-          transition: $args;
+  -moz-transition: $args;
+  transition: $args;
 }
