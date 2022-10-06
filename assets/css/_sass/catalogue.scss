@@ -2,6 +2,9 @@
   &-item {
     border-bottom: 1px solid $grey-2;
     color: $default-color;
+    @media (prefers-color-scheme: dark) {
+      color: $default-tint-dark;
+    }
     display: block;
     padding: 2rem 0;
 
@@ -29,6 +32,9 @@
 
   &-title {
     color: $default-shade;
+    @media (prefers-color-scheme: dark) {
+      color: $default-tint;
+    }
     display: block;
     font-family: $sans-serif;
     font-size: 2rem;
