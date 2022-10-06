@@ -5,6 +5,9 @@ code {
 
 code {
   background-color: $grey-3;
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten($body-bg-dark, 10%);
+  }
   border-radius: 3px;
   color: $code-color;
   font-size: 85%;
@@ -24,6 +27,9 @@ pre code {
 
 .highlight {
   background-color: $grey-3;
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten($body-bg-dark, 10%);
+  }
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;

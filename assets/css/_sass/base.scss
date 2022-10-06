@@ -6,6 +6,11 @@
 html,
 body {
   color: $default-color;
+  @media (prefers-color-scheme: dark) {
+    color: $default-color-dark;
+    background-color: $body-bg-dark;
+  }
+  
   margin: 0;
   padding: 0;
 }
@@ -31,6 +36,9 @@ h4,
 h5,
 h6 {
   color: $default-shade;
+  @media (prefers-color-scheme: dark) {
+    color: $default-tint;
+  }
   font-family: $sans-serif;
   line-height: normal;
 }
