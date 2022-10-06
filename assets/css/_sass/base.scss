@@ -6,6 +6,10 @@
 html,
 body {
   color: $default-color;
+  @media (prefers-color-scheme: dark) {
+    background-color: $body-bg-dark;
+  }
+  
   margin: 0;
   padding: 0;
 }
