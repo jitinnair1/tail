@@ -7,7 +7,7 @@ html,
 body {
   color: $default-color;
   @media (prefers-color-scheme: dark) {
-    color: $default-tint;
+    color: $default-color-dark;
     background-color: $body-bg-dark;
   }
   

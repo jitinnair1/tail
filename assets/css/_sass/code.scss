@@ -5,6 +5,9 @@ code {
 
 code {
   background-color: $grey-3;
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten($body-bg-dark, 10%);
+  }
   border-radius: 3px;
   color: $code-color;
   font-size: 85%;

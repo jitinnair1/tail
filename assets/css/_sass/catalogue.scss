@@ -3,7 +3,7 @@
     border-bottom: 1px solid $grey-2;
     color: $default-color;
     @media (prefers-color-scheme: dark) {
-      color: $default-tint-dark;
+      color: $default-color-dark;
     }
     display: block;
     padding: 2rem 0;
@@ -33,7 +33,7 @@
   &-title {
     color: $default-shade;
     @media (prefers-color-scheme: dark) {
-      color: $default-tint;
+      color: $default-color-dark;
     }
     display: block;
     font-family: $sans-serif;
