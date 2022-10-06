@@ -3,7 +3,7 @@ layout: post
 title: "Example Content"
 author: "Jitin"
 date: 4th Oct 2022
-tags: Example
+tags: Old
 excerpt_separator: <!--more-->
 ---
 
