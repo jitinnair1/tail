@@ -26,6 +26,9 @@ footer,
   &-title {
     @include transition(all .2s ease-out);
     color: $default-color;
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
@@ -46,6 +49,9 @@ footer,
   li {
     @include transition(all .2s ease-out);
     color: $default-color;
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
     display: inline-block;
     opacity: .6;
     padding: 0 2rem 0 0;
@@ -62,6 +68,9 @@ footer,
 
   a {
     color: $default-color;
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
     font-family: $sans-serif;
   }
 }
@@ -87,6 +96,9 @@ footer {
 
   span {
     color: $default-color;
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
     font-size: .8rem;
   }
 }
