@@ -9,9 +9,9 @@
 
     <p>
       {% if post.excerpt_separator %}
-        {{ post.excerpt | strip_html }}
+        {{ post.excerpt | strip_footnotes | strip_html}}
       {% else %}
-        {{ post.content | strip_html | truncatewords: 30 }}
+        {{ post.content | strip_footnotes | strip_html | truncatewords: 30 }}
       {% endif %}
     </p>
 
