@@ -40,6 +40,26 @@ $body-bg-dark: #000000;
   body-bg-dark :$body-bg-dark;
 }
 
+//export colours for use in JS
+:export {
+
+  //light colours
+  default-color :$default-color;
+  default-shade :$default-shade;
+  default-tint :$default-tint;
+  shadow-color :$shadow-color;
+  code-color :$code-color;
+  body-bg :$body-bg;
+
+  //dark colours
+  default-color-dark :$default-color-dark;
+  default-shade-dark :$default-shade-dark;
+  default-tint-dark :$default-tint-dark;
+  shadow-color-dark :$shadow-color-dark;
+  code-color-dark :$code-color-dark;
+  body-bg-dark :$body-bg-dark;
+}
+
 
 
 // Fonts
