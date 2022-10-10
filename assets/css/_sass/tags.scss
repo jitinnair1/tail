@@ -68,10 +68,14 @@
       @media (prefers-color-scheme: dark) {
         color: $default-color-dark;
       }
+      @media (max-width: $on-phone) {
+      width: 200px;
+      display: block;
       text-decoration: none;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      }
     }
 
     &-line {
