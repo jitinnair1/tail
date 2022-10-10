@@ -4,17 +4,25 @@ description:    "Minimal Jekyll blog theme"
 baseurl:        "/tail"
 url:
 
-# https://jekyllrb.com/docs/configuration/options/
-timezone: Asia/Kolkata
-
-# Google Analytics
-google_analytics:
-
 # Author
 author:
   name:         Jitin Nair
   url:          https://jitin.xyz
   email:        hello@jitin.xyz
+
+# https://jekyllrb.com/docs/configuration/options/
+timezone: Asia/Kolkata
+
+# Permalinks
+permalink:      /:title
+paginate:       5
+
+# Show Related Notes
+show_related_posts: false
+open_external_links_in_new_tab: false
+
+# Google Analytics
+google_analytics:
 
 # Build settings
 markdown:       kramdown
@@ -32,10 +40,6 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-last-modified-at
-
-# Permalinks
-permalink:      /:title
-paginate:       5
 
 # Excludes
 exclude:

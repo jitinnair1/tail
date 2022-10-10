@@ -30,6 +30,10 @@ layout: default
   {{ content }}
 </div>
 
+{% if site.show_related_posts %}
+  {% include related_posts.html %}
+{% endif %}
+
 {% if page.comments %}
   {% include disqus_comments.html %}
 {% endif %}

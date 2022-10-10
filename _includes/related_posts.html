@@ -1,0 +1,15 @@
+{% if page.backlinks.size > 0 %}
+    {% for backlink in page.backlinks %}
+    <div class="backlink-box">
+      <a class="internal-link" href="{{ backlink.url | absolute_url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+      <p>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
+    </div>
+    {% endfor %}
+  {% else %}
+
+  <div>
+    <p>
+      There are no notes linking to this note.
+    </p>
+  </div>
+  {% endif %}
