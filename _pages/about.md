@@ -1,16 +1,15 @@
 ---
 layout: page
 title: "About"
-author: "Jitin"
 permalink: /about/
 ---
 
-How do take an already amazing theme like [Tale](https://github.com/chesterhow/tale) and make it better? Yeah, dark-mode. That and some more is what led to this theme called Tail (as a hat tip to the original theme of course)
+This theme builds upon an amazing theme called [Tale](https://github.com/chesterhow/tale). Apart from the minor fixes to Tale, this theme is designed to make it easier to maintain a blog. If you already have a bunch of files in `*.md` format, you can simply copy them to the `_posts` folder after forking this theme and making a few changes to `_config.yml`, your blog is ready to go!
 
 ## What's new in Tail
 - Dark Mode
 - Support for posts without the `YYYY-MM-DD` in post's filename
-- Bi-directional Wiki-style linking support compatible with Obsidian
+- Bi-directional Wiki-style linking support compatible with Obsidian (Planned)
 
 ## Some great features from the original Tale
 - Compatible with GitHub Pages
