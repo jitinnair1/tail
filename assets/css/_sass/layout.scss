@@ -15,6 +15,9 @@ footer,
 
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 2px 2px -2px $shadow-color-dark;
+  }
   overflow: auto;
 
   &-container {
