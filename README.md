@@ -23,3 +23,10 @@ Found a bug or have a suggestion? Feel free to create an issue or make a pull re
 
 ## License
 See [LICENSE](https://github.com/jitinnair1/tail/blob/master/LICENSE)
+
+PS: If you liked this theme, do star it on GitHub. 
+
+### Also, check out:
+
+- [autoCV](https://github.com/jitinnair1/autocv) - a LaTeX template that builds and deploys the CV using GitHub Actions, so you will always have a ready link for your latest CV
+- [gradfolio](https://github.com/jitinnair1/gradfolio) - a minimal, quick-setup template for a personal website/portfolio

@@ -23,3 +23,10 @@ If you already have a bunch of files in `*.md` format, you can simply copy them 
 - Tags
 - Excerpt management
 - Disqus comments
+
+PS: If you liked this theme, do star it on GitHub. 
+
+### Also, check out:
+
+- [autoCV](https://github.com/jitinnair1/autocv) - a LaTeX template that builds and deploys the CV using GitHub Actions, so you will always have a ready link for your latest CV
+- [gradfolio](https://github.com/jitinnair1/gradfolio) - a minimal, quick-setup template for a personal website/portfolio
