@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/tail/feed.xml" rel="self" type="application/atom+xml" /><link href="/tail/" rel="alternate" type="text/html" /><updated>2022-10-11T16:10:21+05:30</updated><id>/tail/feed.xml</id><title type="html">Tail</title><subtitle>Minimal Jekyll blog theme</subtitle><author><name>Jitin Nair</name><email>hello@jitin.xyz</email></author><entry><title type="html">Introducing Tail</title><link href="/tail/introducing-tail" rel="alternate" type="text/html" title="Introducing Tail" /><published>2022-10-06T00:00:00+05:30</published><updated>2022-10-11T00:32:36+05:30</updated><id>/tail/introducing-tail</id><content type="html" xml:base="/tail/introducing-tail"><![CDATA[<p>How do take an already amazing theme like <a href="https://github.com/chesterhow/tale">Tale</a> and make it better? Yup, dark-mode<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. That and some more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course)</p>
+
+<!--more-->
+
+<h2 id="whats-new-in-tail">What’s new in Tail</h2>
+<ul>
+  <li>Dark Mode</li>
+  <li>Support for posts without the <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> in post’s filename</li>
+  <li>Bi-directional Wiki-style linking support compatible with Obsidian (Planned)</li>
+</ul>
+
+<h2 id="some-great-features-from-the-original-tale">Some great features from the original Tale</h2>
+<ul>
+  <li>Compatible with GitHub Pages</li>
+  <li>Responsive design (looks just as good on mobile)</li>
+  <li>Syntax highlighting, with the help of Pygments</li>
+  <li>Markdown and HTML text formatting</li>
+  <li>Pagination of posts</li>
+  <li>Sticky posts</li>
+  <li>Tags</li>
+  <li>Excerpt management</li>
+  <li>Disqus comments</li>
+</ul>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Jitin</name></author><category term="Tail" /><summary type="html"><![CDATA[How do take an already amazing theme like Tale and make it better? Yup, dark-mode1. That and some more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course) For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! &#8617;]]></summary></entry><entry><title type="html">Example Content</title><link href="/tail/example-content" rel="alternate" type="text/html" title="Example Content" /><published>2022-10-04T00:00:00+05:30</published><updated>2022-10-06T22:17:04+05:30</updated><id>/tail/example-content</id><content type="html" xml:base="/tail/example-content"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis.<!--more--> Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.</p>
+
+<h1 id="headers">Headers</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gh"># H1</span>
+<span class="gu">## H2</span>
+<span class="gu">### H3</span>
+<span class="gu">#### H4</span>
+<span class="gu">##### H5</span>
+<span class="gu">###### H6</span></code></pre></figure>
+
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+
+<h1 id="text-formatting">Text formatting</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">-</span> <span class="gs">**Bold**</span>
+<span class="p">-</span> _Italics_
+<span class="p">-</span> ~~Strikethrough~~
+<span class="p">-</span> <span class="nt">&lt;ins&gt;</span>Underline<span class="nt">&lt;/ins&gt;</span>
+<span class="p">-</span> <span class="nt">&lt;sup&gt;</span>Superscript<span class="nt">&lt;/sup&gt;</span>
+<span class="p">-</span> <span class="nt">&lt;sub&gt;</span>Subscript<span class="nt">&lt;/sub&gt;</span>
+<span class="p">-</span> Abbreviation: <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span>
+<span class="p">-</span> Citation: <span class="nt">&lt;cite&gt;</span><span class="ni">&amp;mdash;</span> Chester How<span class="nt">&lt;/cite&gt;</span></code></pre></figure>
+
+<ul>
+  <li><strong>Bold</strong></li>
+  <li><em>Italics</em></li>
+  <li><del>Strikethrough</del></li>
+  <li><ins>Underline</ins></li>
+  <li><sup>Superscript</sup></li>
+  <li><sub>Subscript</sub></li>
+  <li>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></li>
+  <li>Citation: <cite>— Chester How</cite></li>
+</ul>
+
+<h1 id="lists">Lists</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Ordered list item 1
+<span class="p">2.</span> Ordered list item 2
+<span class="p">3.</span> Ordered list item 3
+<span class="p">
+*</span> Unordered list item 1
+<span class="p">*</span> Unordered list item 2
+<span class="p">*</span> Unordered list item 3</code></pre></figure>
+
+<ol>
+  <li>Ordered list item 1</li>
+  <li>Ordered list item 2</li>
+  <li>Ordered list item 3</li>
+</ol>
+
+<ul>
+  <li>Unordered list item 1</li>
+  <li>Unordered list item 2</li>
+  <li>Unordered list item 3</li>
+</ul>
+
+<h1 id="links">Links</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Check out tale on <span class="p">[</span><span class="nv">GitHub</span><span class="p">](</span><span class="sx">https://github.com/chesterhow/tale</span><span class="p">)</span>.</code></pre></figure>
+
+<p>Check out tale on <a href="https://github.com/chesterhow/tale">GitHub</a>.</p>
+
+<h1 id="images">Images</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">![</span><span class="nv">An image</span><span class="p">](</span><span class="sx">url</span> <span class="nn">"Alt Text"</span><span class="p">)</span>
+
+<span class="p">![</span><span class="nv">Image with caption</span><span class="p">](</span><span class="sx">url</span> <span class="nn">"Image with caption"</span><span class="p">)</span>
+<span class="ge">_This is an image with a caption_</span></code></pre></figure>
+
+<p><img src="https://images.unsplash.com/photo-1664784805210-9fa665e2b7e9?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" alt="An image" title="An image" /></p>
+
+<p><img src="https://images.unsplash.com/photo-1527697911963-20cb424e9608?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1486&amp;q=80" alt="Image with caption" title="Image with caption" />
+<em>This is an image with a caption</em></p>
+
+<h1 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h1>
+<p>Use back-ticks for <code class="language-plaintext highlighter-rouge">inline code</code>. Multi-line code snippets are supported too through Pygments.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Sample javascript code</span>
+<span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Sample python code
+</span><span class="n">s</span> <span class="o">=</span> <span class="s">"Python syntax highlighting"</span>
+<span class="k">print</span> <span class="n">s</span></code></pre></figure>
+
+<p>Adding <code class="language-plaintext highlighter-rouge">linenos</code> to the highlight tag enables line numbers.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="c1">// Sample javascript code</span>
+<span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h1 id="blockquotes">Blockquotes</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gt">&gt; Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</span></code></pre></figure>
+
+<blockquote>
+  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<h1 id="horizontal-rule--line-break">Horizontal Rule &amp; Line Break</h1>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Use <span class="sb">`&lt;hr&gt;`</span> for horizontal rules
+
+<span class="nt">&lt;hr&gt;</span>
+
+and <span class="sb">`&lt;br&gt;`</span> for line breaks.
+
+<span class="nt">&lt;br&gt;</span></code></pre></figure>
+
+<p>Use <code class="language-plaintext highlighter-rouge">&lt;hr&gt;</code> for horizontal rules</p>
+
+<hr />
+
+<p>and <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> for line breaks.</p>
+
+<p><br /></p>
+
+<p><em>The end</em></p>]]></content><author><name>Jitin</name></author><category term="Old" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis.]]></summary></entry><entry><title type="html">Managing Excerpt</title><link href="/tail/managing-excerpt" rel="alternate" type="text/html" title="Managing Excerpt" /><published>2022-10-02T00:00:00+05:30</published><updated>2022-10-06T22:17:04+05:30</updated><id>/tail/managing-excerpt</id><content type="html" xml:base="/tail/managing-excerpt"><![CDATA[<p>You can customise the excerpt (the text displayed below each post on the homepage) using the <code class="language-plaintext highlighter-rouge">excerpt-separator</code>.<!--more--> Here’s how you can do so!</p>
+
+<h2 id="steps">Steps</h2>
+
+<ol>
+  <li>
+    <p>Add <code class="language-plaintext highlighter-rouge">excerpt_separator: &lt;!--more--&gt;</code> to the frontmatter of your blog post.</p>
+  </li>
+  <li>
+    <p>Insert this <code class="language-plaintext highlighter-rouge">&lt;!--more--&gt;</code> at where you would like the excerpt to cut off in your blog post.</p>
+  </li>
+</ol>
+
+<h3 id="note">Note</h3>
+
+<p>This follows <a href="https://jekyllrb.com/docs/posts/#post-excerpts">Jekyll’s recommended way of managing excerpts</a>.</p>]]></content><author><name>Jitin</name></author><category term="Old" /><summary type="html"><![CDATA[You can customise the excerpt (the text displayed below each post on the homepage) using the excerpt-separator.]]></summary></entry><entry><title type="html">Posts Without Date in Filename</title><link href="/tail/posts-without-filename" rel="alternate" type="text/html" title="Posts Without Date in Filename" /><published>2022-10-01T00:00:00+05:30</published><updated>2022-10-06T22:16:51+05:30</updated><id>/tail/posts-without-filename</id><content type="html" xml:base="/tail/posts-without-filename"><![CDATA[<p>Typically, posts in Jekyll have a <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename.</p>
+
+<!--more-->
+
+<p>Also, it become easier to export a set of <code class="language-plaintext highlighter-rouge">*.md</code> files from any note-taking app and add them to the <code class="language-plaintext highlighter-rouge">_posts</code> folder without worrying about changing the filenames.</p>
+
+<p>Tail does this by using a <a href="https://stackoverflow.com/a/68287682/9523246">small plugin</a> that changes the <code class="language-plaintext highlighter-rouge">DATE_FILENAME_MATCHER</code> for <code class="language-plaintext highlighter-rouge">_posts</code> and <code class="language-plaintext highlighter-rouge">_drafts</code> folders</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Jekyll::PostReader</span>
+    <span class="c1"># Don't use DATE_FILENAME_MATCHER so we don't need to put those stupid dates</span>
+    <span class="c1"># in the filename. Also limit to just *.markdown, so it won't process binary</span>
+    <span class="c1"># files from e.g. drags.</span>
+    <span class="k">def</span> <span class="nf">read_posts</span><span class="p">(</span><span class="n">dir</span><span class="p">)</span>
+      <span class="n">read_publishable</span><span class="p">(</span><span class="n">dir</span><span class="p">,</span> <span class="s2">"_posts"</span><span class="p">,</span> <span class="sr">/.*\.md$/</span><span class="p">)</span>
+    <span class="k">end</span>
+    <span class="k">def</span> <span class="nf">read_drafts</span><span class="p">(</span><span class="n">dir</span><span class="p">)</span>
+      <span class="n">read_publishable</span><span class="p">(</span><span class="n">dir</span><span class="p">,</span> <span class="s2">"_drafts"</span><span class="p">,</span> <span class="sr">/.*\.md$/</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+</code></pre></div></div>]]></content><author><name>Jitin</name></author><category term="New" /><summary type="html"><![CDATA[Typically, posts in Jekyll have a YYYY-MM-DD portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename.]]></summary></entry><entry><title type="html">Pagination Post</title><link href="/tail/pagination-post" rel="alternate" type="text/html" title="Pagination Post" /><published>2022-09-20T00:00:00+05:30</published><updated>2022-10-06T22:17:04+05:30</updated><id>/tail/pagination-post</id><content type="html" xml:base="/tail/pagination-post"><![CDATA[<p>Here we see <strong>Tail’s</strong> pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file!</p>]]></content><author><name>Jitin</name></author><category term="Old" /><summary type="html"><![CDATA[Here we see Tail’s pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the _config.yml file!]]></summary></entry><entry><title type="html">Sticky Posts</title><link href="/tail/sticky-posts" rel="alternate" type="text/html" title="Sticky Posts" /><published>2022-09-17T00:00:00+05:30</published><updated>2022-10-06T22:17:04+05:30</updated><id>/tail/sticky-posts</id><content type="html" xml:base="/tail/sticky-posts"><![CDATA[<p>Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature.<!--more--> There is no limit on the number of sticky posts you can have. Although do note that each page will show all your sticky posts + the paginated posts. So if you have 4 sticky posts and 5 posts per page, each page can display up to 9 posts.</p>
+
+<h2 id="making-a-post-sticky">Making a post “sticky”</h2>
+
+<p>Add <code class="language-plaintext highlighter-rouge">sticky: true</code> to the frontmatter of your blog post.</p>
+
+<h3 id="exclude-sticky-post-from-paginated-posts">Exclude sticky post from paginated posts</h3>
+
+<p>By default, sticky posts are still included in the paginated posts. To exclude a sticky post from paginated posts, add <code class="language-plaintext highlighter-rouge">hidden: true</code> to the frontmatter of that blog post.</p>]]></content><author><name>Jitin</name></author><category term="Old" /><summary type="html"><![CDATA[Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature.]]></summary></entry><entry><title type="html">Posts Without Date in Frontmatter</title><link href="/tail/posts-without-date" rel="alternate" type="text/html" title="Posts Without Date in Frontmatter" /><published>2022-09-01T00:00:00+05:30</published><updated>2022-10-06T22:16:51+05:30</updated><id>/tail/posts-without-date</id><content type="html" xml:base="/tail/posts-without-date"><![CDATA[<p>Typically, posts in Jekyll have a <code class="language-plaintext highlighter-rouge">date</code> entry in the post’s frontmatter. This date, if not specified will be taken to be the date when the post was last modified.</p>
+
+<!--more-->
+
+<p>This is done using the <code class="language-plaintext highlighter-rouge">jekyll-last-modified-at</code> plugin. The last-modified date is only used, if a <code class="language-plaintext highlighter-rouge">date</code> in not specified in the front matter. Also, you can specify the <code class="language-plaintext highlighter-rouge">lastmod</code> date in the front matter using the <code class="language-plaintext highlighter-rouge">last_modified_at</code> keyword:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Posts</span><span class="nv"> </span><span class="s">Without</span><span class="nv"> </span><span class="s">Date</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">Frontmatter"</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">1st Sept </span><span class="m">2022</span>
+<span class="na">showlastmod</span><span class="pi">:</span> <span class="s">yes</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Jitin"</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="s">Tail</span>
+<span class="na">excerpt_separator</span><span class="pi">:</span> <span class="s">&lt;!--more--&gt;</span>
+<span class="na">hidden</span><span class="pi">:</span> <span class="no">false</span>
+<span class="nn">---</span>
+</code></pre></div></div>]]></content><author><name>Jitin</name></author><category term="New" /><summary type="html"><![CDATA[Typically, posts in Jekyll have a date entry in the post’s frontmatter. This date, if not specified will be taken to be the date when the post was last modified.]]></summary></entry></feed>
