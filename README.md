@@ -24,7 +24,7 @@ Found a bug or have a suggestion? Feel free to create an issue or make a pull re
 ## License
 See [LICENSE](https://github.com/jitinnair1/tail/blob/master/LICENSE)
 
-PS: If you liked this theme, do star it on GitHub. 
+PS: If you liked this theme, do star :star: it on GitHub. 
 
 ### Also, check out:
 
