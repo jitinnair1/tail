@@ -14,4 +14,4 @@ end
 
 gem "webrick", "~> 1.7"
 
-gem "nokogiri", "~> 1.13"
+gem "nokogiri", "~> 1.15"
