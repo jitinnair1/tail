@@ -31,7 +31,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-last-modified-at
 
 # Permalinks
 permalink:      /:title
