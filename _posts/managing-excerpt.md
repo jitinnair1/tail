@@ -2,7 +2,6 @@
 layout: post
 title: "Managing Excerpt"
 date: 2nd Oct 2022
-author: "Jitin"
 tags: Old
 excerpt_separator: <!--more-->
 ---

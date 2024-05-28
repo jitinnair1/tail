@@ -12,9 +12,6 @@ google_analytics:
 
 # Author
 author:
-  name:         Jitin Nair
-  url:          https://jitin.xyz
-  email:        hello@jitin.xyz
 
 # Build settings
 markdown:       kramdown

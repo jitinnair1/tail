@@ -3,7 +3,6 @@ title: "Posts Without Date in Frontmatter"
 layout: post
 date: 1st Sept 2022
 showlastmod: yes
-author: "Jitin"
 comments: false
 tags: New
 excerpt_separator: <!--more-->

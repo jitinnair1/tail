@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Example Content"
-author: "Jitin"
 date: 4th Oct 2022
 tags: Old
 excerpt_separator: <!--more-->

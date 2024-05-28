@@ -2,7 +2,6 @@
 title: "Posts Without Date in Filename"
 date: 1st Oct 2022
 layout: post
-author: "Jitin"
 comments: false
 tags: New
 excerpt_separator: <!--more-->
