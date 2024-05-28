@@ -14,13 +14,13 @@ layout: default
     {% if page.date and page.showlastmod %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      <span> and last updated on&nbsp;</span><time datetime="{% last_modified_at %}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time>    
+      <span> and last updated on&nbsp;</span><time datetime="{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}">{{ lastmod_date | date: "%B %d, %Y" }}</time>    
     {% elsif page.date %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% else %}
     <br>
-      <span>on&nbsp;</span><time datetime="{% last_modified_at %}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time>
+      <span>on&nbsp;</span><time datetime="{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}">{{ lastmod_date | date: "%B %d, %Y" }}</time>
     {% endif %}
   </div>
 

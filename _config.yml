@@ -11,13 +11,19 @@ timezone: Asia/Kolkata
 google_analytics:
 
 # Author
+#   This is the default author name displayed on all posts, can be overridden by setting a different `author: Your Name`
+#   in the frontmatter
 author:
-  name:         Jitin Nair
-  url:          https://jitin.xyz
-  email:        hello@jitin.xyz
+  name:         Your Name
 
 # Build settings
 markdown:       kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
 include:
   - _pages
 
@@ -31,7 +37,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-last-modified-at
 
 # Permalinks
 permalink:      /:title

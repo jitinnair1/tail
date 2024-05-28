@@ -2,7 +2,6 @@
 layout: post
 title:  "Introducing Tail"
 date: 6th Oct 2022
-author: "Jitin"
 comments: false
 tags: Tail
 excerpt_separator: <!--more-->

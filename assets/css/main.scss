@@ -6,9 +6,18 @@
 @import 'base';
 @import 'code';
 @import 'post';
-@import 'syntax';
 @import 'layout';
 @import 'pagination';
 @import 'catalogue';
 @import '404';
 @import 'tags';
+
+//syntax highlighting based on dark mode preference
+@media (prefers-color-scheme: light) {
+    @import "sass-code-highlight/default";
+  }
+@media (prefers-color-scheme: dark) {
+    @import "sass-code-highlight/monokai";
+  }
+
+

@@ -51,16 +51,13 @@ a {
 blockquote {
   border-left: .25rem solid $grey-2;
   color: $grey-1;
-  margin: .8rem 0;
-  padding: .5rem 1rem;
+  margin: .5rem 1.25rem 0.5;
+  padding: .1rem 1.5rem .1rem 1.5rem;
 
   p:last-child {
     margin-bottom: 0;
   }
 
-  @media (min-width: 600px) {
-    padding: 0 5rem 0 1.25rem;
-  }
 }
 
 img {
