@@ -11,10 +11,19 @@ timezone: Asia/Kolkata
 google_analytics:
 
 # Author
+#   This is the default author name displayed on all posts, can be overridden by setting a different `author: Your Name`
+#   in the frontmatter
 author:
+  name:         Your Name
 
 # Build settings
 markdown:       kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
 include:
   - _pages
 
