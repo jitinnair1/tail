@@ -11,10 +11,14 @@ layout: default
         {{ site.author.name }}
     {% endif %}
 
-    {% if page.date and page.showlastmod %}
+    {% if page.date and page.lastmod %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      <span> and last updated on&nbsp;</span><time datetime="{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}">{{ lastmod_date | date: "%B %d, %Y" }}</time>    
+      <span> and last updated on&nbsp;</span><time datetime="{{ page.lastmod }}">{{ page.lastmod | date: "%B %d, %Y" }}</time>    
+    {% elsif page.date and page.showlastmod %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span> and last updated on&nbsp;</span><time datetime="{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}">{{ lastmod_date | date: "%B %d, %Y" }}</time>
     {% elsif page.date %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
