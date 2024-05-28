@@ -1,3 +1,5 @@
+# Using https://github.com/michaelx/jekyll-last-modified
+
 module Jekyll
   class LastModifiedTag < Liquid::Tag
 
