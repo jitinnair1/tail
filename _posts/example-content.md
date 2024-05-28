@@ -98,13 +98,14 @@ _This is an image with a caption_
 
 Use back-ticks for `inline code`. Multi-line code snippets are supported too through. Specify the language after the back-ticks for language specific syntax highlighting.
 
-````markdown
+`````
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
-````
+`````
+
 which will give you syntax highlighting like this:
 
 ```ruby
