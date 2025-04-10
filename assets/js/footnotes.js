@@ -108,6 +108,7 @@ document.querySelectorAll('.footnote').forEach(link => {
     // Only use special handling on mobile screens
     if (window.innerWidth <= 768) {
       event.preventDefault(); // Prevent jumping to footnote
+      event.stopPropagation(); // Stop the event from bubbling to the document
 
       // Toggle popup if clicking the same footnote
       if (currentFootnote === this) {
