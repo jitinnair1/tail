@@ -14,7 +14,6 @@
 
 .footnotes {
   margin-top: 3rem;
-  border-top: 1px solid #eee;
   padding-top: 1rem;
 }
 
@@ -38,10 +37,11 @@
   display: none;
   width: 300px;
   background-color: $body-bg;
+  border: 1px solid $grey-2;
   @media (prefers-color-scheme: dark) {
-    background-color: $body-bg-dark;
+    background-color: $body-bg-darkk;
+    border: 1px solid $grey-2-dark;
   }
-  border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   padding: 12px;

@@ -1,9 +1,13 @@
 .pagination {
-  border-top: .5px solid $grey-2;
+  border-top: .5px solid #eee;
   font-family: $serif-secondary;
   padding-top: 2rem;
   position: relative;
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+      border-top: .5px solid #353535;
+  }
 
   span {
     color: $default-shade;

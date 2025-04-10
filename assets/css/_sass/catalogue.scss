@@ -3,6 +3,7 @@
     border-bottom: 1px solid $grey-2;
     color: $default-color;
     @media (prefers-color-scheme: dark) {
+      border-bottom: 1px solid $grey-2-dark;
       color: $default-color-dark;
     }
     display: block;
