@@ -16,12 +16,13 @@ How do take an already amazing theme like [Tale](https://github.com/chesterhow/t
 ## What's new in Tail
 - Dark Mode
 - Support for posts without the `YYYY-MM-DD` in post's filename
+- Popup Footnotes
 - Bi-directional Wiki-style linking support compatible with Obsidian (Planned)
 
-## Some great features from the original Tale
+## Some great features from the original Tale (with minor updates)
 - Compatible with GitHub Pages
 - Responsive design (looks just as good on mobile)
-- Syntax highlighting, with the help of Pygments
+- Syntax highlighting
 - Markdown and HTML text formatting
 - Pagination of posts
 - Sticky posts

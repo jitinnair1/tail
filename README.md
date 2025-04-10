@@ -7,9 +7,10 @@ If you already have a bunch of files in `*.md` format, you can simply copy them 
 ## What's new in Tail
 - Dark Mode
 - Support for posts without the `YYYY-MM-DD` in the post's filename
+- Popup Footnotes
 - Bi-directional Wiki-style linking support compatible with Obsidian (Planned)
 
-## Features
+## Other Features from Tale (with minor updates)
 - Easy installation
 - Compatible with GitHub Pages
 - Responsive design
