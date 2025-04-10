@@ -2,7 +2,7 @@
 layout: post
 title: "Better Footnotes"
 date: 10th April 2025
-tags: Tail
+tags: New
 ---
 
 When you write something that needs additional context or a citation, you can add a footnote[^1].
