@@ -27,8 +27,6 @@ The markup follows accessibility standards by using proper ARIA roles. You can e
 Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/footnotes-experiment#fnref:technical) by Simon Willison.
 
 
-### Footnotes
-
 [^1]: This is the first footnote. It provides additional information that would otherwise clutter the main text.
 
 [^2]: This second footnote could be used for citation. For example: Smith, J. (2023). *The Art of Footnotes*. *Journal of Useless Knowledge*, 42(1), 123–145.
