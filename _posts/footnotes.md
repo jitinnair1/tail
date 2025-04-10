@@ -24,7 +24,11 @@ The system uses HTML, CSS, and a bit of JavaScript to make the footnotes interac
 The markup follows accessibility standards by using proper ARIA roles. You can even navigate to the footnotes and back using the links[^4].
 
 ## Credits
-Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/colophon#footnotes-experiment.html) by Simon Willison.
+
+Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/colophon#footnotes-experiment.html) by Simon Willison. Some of the changes I made are:
+
+- Clicking the footnote does not take you to the footnote listed at the end of the page, instead the interaction now works as hover to preview, click to toggle/hide. The footnotes are listed at the bottom of the page only so that the footnote references are visible say when the page is printed.
+- The popup now does not contain the back-link symbol.
 
 
 [^1]: This is the first footnote. It provides additional information that would otherwise clutter the main text.
