@@ -1,0 +1,52 @@
+//_footnotes.scss
+
+.footnote {
+  text-decoration: none;
+  color: #0066cc;
+  vertical-align: super;
+  font-size: 0.75em;
+  padding: 0 2px;
+}
+
+.footnote:hover {
+  background-color: #f0f8ff;
+}
+
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+.footnotes ol {
+  padding-left: 1.5rem;
+}
+
+.footnotes li {
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+}
+
+.reversefootnote {
+  text-decoration: none;
+  color: #0066cc;
+  margin-left: 0.5rem;
+}
+
+#footnote-popup {
+  position: fixed;
+  display: none;
+  width: 300px;
+  background-color: $body-bg;
+  border: 1px solid $grey-2;
+  @media (prefers-color-scheme: dark) {
+    background-color: $body-bg-darkk;
+    border: 1px solid $grey-2-dark;
+  }
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 12px;
+  z-index: 1000;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+

@@ -32,7 +32,13 @@ layout: default
   <div class="post-line"></div>
 
   {{ content }}
+  
+  <div id="footnote-popup"></div>
+  <script type="module" src="{{ '/assets/js/footnotes.js' | relative_url }}"></script>
+  
 </div>
+
+
 
 {% if page.comments %}
   {% include disqus_comments.html %}
