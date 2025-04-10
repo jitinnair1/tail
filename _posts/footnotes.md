@@ -24,7 +24,7 @@ The system uses HTML, CSS, and a bit of JavaScript to make the footnotes interac
 The markup follows accessibility standards by using proper ARIA roles. You can even navigate to the footnotes and back using the links[^4].
 
 ## Credits
-Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/footnotes-experiment#fnref:technical) by Simon Willison.
+Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/colophon#footnotes-experiment.html) by Simon Willison.
 
 
 [^1]: This is the first footnote. It provides additional information that would otherwise clutter the main text.
