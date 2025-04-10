@@ -27,8 +27,8 @@ The markup follows accessibility standards by using proper ARIA roles. You can e
 
 Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/colophon#footnotes-experiment.html) by Simon Willison. Some of the changes I made are:
 
-- Clicking the footnote does not take you to the footnote listed at the end of the page, instead the interaction now works as hover to preview, click to toggle/hide. The footnotes are listed at the bottom of the page only so that the footnote references are visible say when the page is printed.
-- The popup now does not contain the back-link symbol.
+- Clicking the footnote does not take you to the footnote listed at the end of the page, instead the interaction now works as hover to preview, click to toggle/hide.[^5] 
+- The popup content now does not contain the back-link symbol.
 
 
 [^1]: This is the first footnote. It provides additional information that would otherwise clutter the main text.
@@ -38,4 +38,6 @@ Lastly, this feature was adapted (read stolen) from [this post](https://tools.si
 [^3]: The footnote system uses the `:target` CSS selector and JavaScript to enhance the user experience. This technical approach allows for both progressive enhancement and accessibility.
 
 [^4]: The back-link (↩) takes you back to where you came from in the text, which is particularly useful in longer documents.
+
+[^5]: The footnotes are listed at the bottom of the page only so that the footnote references are visible say when the page is printed.
 
