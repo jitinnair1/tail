@@ -34,6 +34,7 @@ $monospaced: IBM Plex Mono, Menlo, Monaco, monospace !default;
 
 //length variables for responsive design
 //only used in tags.scss for the time being. Todo: standardize useage of sizes across the theme
+$on-small-screen: 600px;
 $on-phone: 450px;
 
 @mixin box-sizing($type: border-box) {
