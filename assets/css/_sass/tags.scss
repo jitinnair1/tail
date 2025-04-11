@@ -89,9 +89,13 @@
     }
 
     &-meta {
-      color: $default-tint;
+      color: $default-color;
+      @media (prefers-color-scheme: dark) {
+        color: $default-color-dark;
+      }
       text-align: right;
       white-space: nowrap;
+      font-family: $monospaced;
     }
 
     &:hover,

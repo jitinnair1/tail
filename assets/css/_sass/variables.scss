@@ -30,9 +30,9 @@ $body-bg-dark: #0F1216;
 $serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
 $serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
 $sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
-$monospaced: Menlo, Monaco, monospace !default;
+$monospaced: IBM Plex Mono, Menlo, Monaco, monospace !default;
 
-//length variables for responsive design 
+//length variables for responsive design
 //only used in tags.scss for the time being. Todo: standardize useage of sizes across the theme
 $on-phone: 450px;
 
