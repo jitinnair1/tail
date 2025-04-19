@@ -15,11 +15,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon/favicon-16x16.png" | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicon/apple-touch-icon.png" | relative_url }}">
 
+  <!-- Search -->
+  <link rel="stylesheet" href="{{ "pagefind/pagefind-ui.css" | relative_url }}">
+  <script src="{{ "pagefind/pagefind-ui.js" | relative_url }}" type="text/javascript"></script>
+  <script src="{{ "assets/js/pagefind.js" | relative_url }}" type="text/javascript"></script>
+
   <!-- RSS -->
   {% feed_meta %}
 
-  <!-- Google Analytics-->
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
 </head>

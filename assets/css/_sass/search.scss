@@ -1,0 +1,70 @@
+#search-modal.hidden {
+  display: none;
+}
+
+#search-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  margin: 10vh auto;
+  max-width: 600px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 0 20px $shadow-color;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  color: $default-color;
+
+  @media (prefers-color-scheme: dark) {
+    background: rgba(30, 30, 30, 0.95);
+    color: $default-color-dark;
+    box-shadow: 0 0 20px $shadow-color-dark;
+  }
+}
+
+#close-search {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: $grey-1;
+  cursor: pointer;
+
+  @media (prefers-color-scheme: dark) {
+    color: $grey-1-dark;
+  }
+}
+
+.pagefind-ui__search-input {
+  border-radius: 5px;
+  color: $default-color;
+
+  @media (prefers-color-scheme: dark) {
+    background: $grey-3-dark;
+    color: $default-color-dark;
+    border: 1px solid $default-tint-dark;
+  }
+}
+
+#search-toggle {
+  color: $default-color;
+  @media (prefers-color-scheme: dark) {
+    color: $default-color-dark;
+  }
+  align-items: center;
+  vertical-align: middle; 
+}
+
