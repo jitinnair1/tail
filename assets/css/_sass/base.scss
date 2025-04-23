@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 * {
   @include box-sizing;
   line-height: 1.5;
@@ -6,13 +8,13 @@
 html,
 body {
   color: $default-color;
-  @media (prefers-color-scheme: dark) {
-    color: $default-color-dark;
-    background-color: $body-bg-dark;
-  }
-
   margin: 0;
   padding: 0;
+
+  @media (prefers-color-scheme: dark) {
+   color: $default-color-dark;
+   background-color: $body-bg-dark;
+  }
 }
 
 html {
@@ -36,11 +38,12 @@ h4,
 h5,
 h6 {
   color: $default-shade;
+  font-family: $sans-serif;
+  line-height: normal;
+
   @media (prefers-color-scheme: dark) {
     color: $default-tint;
   }
-  font-family: $sans-serif;
-  line-height: normal;
 }
 
 a {
@@ -61,7 +64,6 @@ blockquote {
   p:last-child {
     margin-bottom: 0;
   }
-
 }
 
 img {

@@ -1,3 +1,4 @@
+@use 'variables' as *;
 
 /* Modal hidden state */
 #search-modal.hidden {
@@ -24,7 +25,6 @@
   position: relative;
   margin: 6vh auto;
   max-width: 600px;
-
   padding: 1.5rem;
   border-radius: 0;
   z-index: 1000;
@@ -44,6 +44,7 @@
     margin: 0 0 1rem;
     font-size: 0.875rem;
     color: $grey-1;
+
     @media (prefers-color-scheme: dark) {
       color: $grey-1-dark;
     }
@@ -69,8 +70,9 @@
 
   &:hover {
     color: $default-shade;
+
     @media (prefers-color-scheme: dark) {
-  color: $default-tint-dark;
+      color: $default-tint-dark;
     }
   }
 }
@@ -96,14 +98,16 @@
 
   &:focus {
     border-color: $default-tint;
+    box-shadow: none;
+
     @media (prefers-color-scheme: dark) {
       border-color: $default-tint-dark;
     }
-    box-shadow: none;
   }
 
   &::placeholder {
     color: $grey-1;
+
     @media (prefers-color-scheme: dark) {
       color: $grey-1-dark;
     }
@@ -113,11 +117,12 @@
 /* Search toggle button */
 #search-toggle {
   color: $default-color;
+  align-items: center;
+  vertical-align: middle;
+
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark;
   }
-  align-items: center;
-  vertical-align: middle;
 }
 
 /* Search results */
@@ -139,6 +144,7 @@
 .pagefind-ui__result-title,
 .pagefind-ui__result-excerpt {
   color: $default-color !important;
+
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark !important;
   }
