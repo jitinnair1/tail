@@ -1,5 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
-  new PagefindUI({ element: "#search" });
+  new PagefindUI({
+    element: "#search",
+    showImages: false
+  });
 
   const modal = document.getElementById("search-modal");
   const toggle = document.getElementById("search-toggle");

@@ -28,25 +28,23 @@
   padding: 1.5rem;
   border-radius: 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px $shadow-color;
+  box-shadow: 0 1px 3px $shadow-color;
   background: $body-bg;
   color: $default-color;
-  @include box-sizing;
 
   @media (prefers-color-scheme: dark) {
     background: $body-bg-dark;
     color: $default-color-dark;
-    box-shadow: 0 4px 12px $shadow-color-dark;
+    box-shadow: 0 1px 3px $shadow-color-dark;
   }
 
-  /* Instructional text */
   p {
     margin: 0 0 1rem;
     font-size: 0.875rem;
-    color: $grey-1;
+    color: $default-color;
 
     @media (prefers-color-scheme: dark) {
-      color: $grey-1-dark;
+      color: $default-color-dark;
     }
   }
 }
@@ -55,14 +53,13 @@
 #close-search {
   position: absolute;
   right: 1rem;
-  top: 1.5rem;
+  top: 1.25rem;
   background: none;
   border: none;
   font-size: 1.25rem;
   color: $grey-1;
   cursor: pointer;
   line-height: 1;
-  @include transition(color 0.2s ease);
 
   @media (prefers-color-scheme: dark) {
     color: $grey-1-dark;
@@ -77,43 +74,6 @@
   }
 }
 
-/* Search input */
-.pagefind-ui__search-input {
-  border-radius: 0;
-  border: 1px solid $grey-2;
-  background: $grey-3;
-  color: $default-color;
-  padding: 0.75rem;
-  font-size: 1rem;
-  width: 100%;
-  @include box-sizing;
-  outline: none;
-  font-family: $sans-serif;
-
-  @media (prefers-color-scheme: dark) {
-    background: $grey-3-dark;
-    color: $default-color-dark;
-    border: 1px solid $grey-2-dark;
-  }
-
-  &:focus {
-    border-color: $default-tint;
-    box-shadow: none;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $default-tint-dark;
-    }
-  }
-
-  &::placeholder {
-    color: $grey-1;
-
-    @media (prefers-color-scheme: dark) {
-      color: $grey-1-dark;
-    }
-  }
-}
-
 /* Search toggle button */
 #search-toggle {
   color: $default-color;
@@ -122,56 +82,5 @@
 
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark;
-  }
-}
-
-/* Search results */
-.pagefind-ui__result {
-  color: $default-color;
-  background: $grey-3;
-  border: 1px solid $grey-2;
-  margin-bottom: 0.5rem;
-  padding: 0.75rem;
-  @include box-sizing;
-
-  @media (prefers-color-scheme: dark) {
-    color: $default-color-dark;
-    background: $grey-3-dark;
-    border: 1px solid $grey-2-dark;
-  }
-}
-
-.pagefind-ui__result-title,
-.pagefind-ui__result-excerpt {
-  color: $default-color !important;
-
-  @media (prefers-color-scheme: dark) {
-    color: $default-color-dark !important;
-  }
-}
-
-/* Hide empty thumbnail placeholders */
-.pagefind-ui__result-image:empty,
-.pagefind-ui__result-image:not([src]) {
-  display: none;
-}
-
-/* Ensure result container adjusts when image is hidden */
-.pagefind-ui__result-inner {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-
-  .pagefind-ui__result-thumb {
-    flex-shrink: 0;
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-  }
-
-  /* Adjust layout when no image */
-  .pagefind-ui__result-thumb:empty + .pagefind-ui__result-content,
-  .pagefind-ui__result-thumb:not([src]) + .pagefind-ui__result-content {
-    margin-left: 0;
   }
 }
