@@ -84,3 +84,28 @@
     color: $default-color-dark;
   }
 }
+
+:root {
+  --pagefind-ui-border-radius: 4px;
+  --pagefind-ui-primary: #{$default-color};
+  --pagefind-ui-text: #{$default-shade};
+  --pagefind-ui-background: #{$body-bg};
+  --pagefind-ui-border: #{$grey-2};
+  --pagefind-ui-tag: #{$default-tint};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pagefind-ui-primary: #{$default-color-dark};
+    --pagefind-ui-text: #{$default-shade-dark};
+    --pagefind-ui-background: #{$body-bg-dark};
+    --pagefind-ui-border: #{$grey-2-dark};
+    --pagefind-ui-tag: #{$default-tint-dark};
+}
+}
+
+#search input:focus {
+  border-color: $blue;
+  box-shadow: none;
+  outline: none;
+}
