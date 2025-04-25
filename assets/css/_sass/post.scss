@@ -67,3 +67,23 @@
     margin: 0;
   }
 }
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 80px;
+}
+
+.comments a {
+  text-decoration: none;
+  color: $blue;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comments a:hover {
+  opacity: 0.5;
+}

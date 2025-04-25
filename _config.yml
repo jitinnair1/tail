@@ -17,6 +17,11 @@ author:
 markdown:       kramdown
 highlighter: rouge
 
+
+# Comments (Reply via email)
+comments: true
+comment_email: "" #enter an email address where you want comment emails to be sent
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
