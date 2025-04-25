@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div data-pagefind-body class="post">
-  <div class="post-info">
+  <div data-pagefind-ignore class="post-info">
     <span>Written by</span>
     {% if page.author %}
         {{ page.author }}
@@ -14,7 +14,7 @@ layout: default
     {% if page.date and page.lastmod %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      <span> and last updated on&nbsp;</span><time datetime="{{ page.lastmod }}">{{ page.lastmod | date: "%B %d, %Y" }}</time>    
+      <span>and last updated on&nbsp;</span><time datetime="{{ page.lastmod }}">{{ page.lastmod | date: "%B %d, %Y" }}</time>
     {% elsif page.date and page.showlastmod %}
       <br>
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
@@ -28,18 +28,18 @@ layout: default
     {% endif %}
   </div>
 
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 data-pagefind-ignore class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
 
   {{ content }}
-  
+
   {% if site.comments or page.comments %}
     {% include comments.html %}
   {% endif %}
 
   <div id="footnote-popup"></div>
   <script type="module" src="{{ '/assets/js/footnotes.js' | relative_url }}"></script>
-  
+
 </div>
 
 <div class="pagination">
