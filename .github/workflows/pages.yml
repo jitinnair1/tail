@@ -40,4 +40,10 @@ jobs:
           bundler_ver: '>=0'         # Default is latest bundler version
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          pre_build_commands: |
+            # Download Pagefind binary for Linux
+            curl -L -o pagefind.tar.gz https://github.com/CloudCannon/pagefind/releases/download/v1.3.0/pagefind-v1.3.0-x86_64-unknown-linux-musl.tar.gz
+            tar -xzf pagefind.tar.gz
+            chmod +x pagefind
+            # Run Pagefind against the _site directory after Jekyll build
+            ./pagefind --site _site
