@@ -2,23 +2,14 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'variables';
-@import 'base';
-@import 'code';
-@import 'post';
-@import 'layout';
-@import 'pagination';
-@import 'catalogue';
-@import '404';
-@import 'tags';
-@import 'footnotes';
-
-//syntax highlighting based on dark mode preference
-@media (prefers-color-scheme: light) {
-    @import "sass-code-highlight/default";
-  }
-@media (prefers-color-scheme: dark) {
-    @import "sass-code-highlight/monokai";
-  }
-
-
+@use 'variables' as *;
+@use 'base' as *;
+@use 'code' as *;
+@use 'post' as *;
+@use 'layout' as *;
+@use 'pagination' as *;
+@use 'catalogue' as *;
+@use '404' as *;
+@use 'tags' as *;
+@use 'footnotes' as *;
+@use 'search' as *;
