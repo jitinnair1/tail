@@ -4,9 +4,17 @@
 
   {% seo %}
 
+  <!-- Search -->
+  <link rel="stylesheet" href="{{ "pagefind/pagefind-ui.css" | relative_url }}">
+  <script src="{{ "pagefind/pagefind-ui.js" | relative_url }}" type="text/javascript"></script>
+  <script src="{{ "assets/js/pagefind.js" | relative_url }}" type="text/javascript"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+  <link rel="stylesheet" href="{{ "/assets/css/syntax-default.css" | relative_url }}" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="{{ "/assets/css/syntax-monokai.css" | relative_url }}" media="(prefers-color-scheme: dark)">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | relative_url }}">
@@ -16,8 +24,4 @@
   <!-- RSS -->
   {% feed_meta %}
 
-  <!-- Google Analytics-->
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
 </head>

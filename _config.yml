@@ -7,9 +7,6 @@ url:
 # https://jekyllrb.com/docs/configuration/options/
 timezone: Asia/Kolkata
 
-# Google Analytics
-google_analytics:
-
 # Author
 #   This is the default author name displayed on all posts, can be overridden by setting a different `author: Your Name`
 #   in the frontmatter
@@ -19,6 +16,11 @@ author:
 # Build settings
 markdown:       kramdown
 highlighter: rouge
+
+
+# Comments (Reply via email)
+comments: true
+comment_email: "" #enter an email address where you want comment emails to be sent
 
 kramdown:
   input: GFM
