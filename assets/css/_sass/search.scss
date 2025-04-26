@@ -1,0 +1,116 @@
+@use 'variables' as *;
+
+/* Modal hidden state */
+#search-modal.hidden {
+  display: none;
+}
+
+/* Modal positioning */
+#search-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  font-family: $sans-serif;
+}
+
+/* Overlay */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  margin: 6vh auto;
+  max-width: 600px;
+  padding: 1.5rem;
+  border-radius: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px $shadow-color;
+  background: $body-bg;
+  color: $default-color;
+
+  @media (max-width: $on-phone){
+    width: 100%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: $body-bg-dark;
+    color: $default-color-dark;
+    box-shadow: 0 1px 3px $shadow-color-dark;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    font-size: 0.875rem;
+    color: $default-color;
+
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
+  }
+}
+
+/* Close button */
+#close-search {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: $grey-1;
+  cursor: pointer;
+  line-height: 1;
+
+  @media (prefers-color-scheme: dark) {
+    color: $grey-1-dark;
+  }
+
+  &:hover {
+    color: $default-shade;
+
+    @media (prefers-color-scheme: dark) {
+      color: $default-tint-dark;
+    }
+  }
+}
+
+/* Search toggle button */
+#search-toggle {
+  color: $default-color;
+  margin-left: 2px;
+  align-items: center;
+  vertical-align: middle;
+
+  @media (prefers-color-scheme: dark) {
+    color: $default-color-dark;
+  }
+}
+
+:root {
+  --pagefind-ui-border-radius: 4px;
+  --pagefind-ui-primary: #{$default-color};
+  --pagefind-ui-text: #{$default-shade};
+  --pagefind-ui-background: #{$body-bg};
+  --pagefind-ui-border: #{$grey-2};
+  --pagefind-ui-tag: #{$default-tint};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pagefind-ui-primary: #{$default-color-dark};
+    --pagefind-ui-text: #{$default-shade-dark};
+    --pagefind-ui-background: #{$body-bg-dark};
+    --pagefind-ui-border: #{$grey-2-dark};
+    --pagefind-ui-tag: #{$default-tint-dark};
+}
+}
+
+#search input:focus {
+  border-color: $blue;
+  box-shadow: none;
+  outline: none;
+}

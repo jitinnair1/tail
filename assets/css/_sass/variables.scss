@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Standard
 $white: #fff !default;
 $blue: #4a9ae1 !default;
@@ -16,8 +18,8 @@ $body-bg: #fff;
 
 // Dark
 $default-color-dark: #98a0ac;
-$default-shade-dark: #353535;
-$default-tint-dark: #aaa;
+$default-shade-dark: #ccc;
+$default-tint-dark: #444;
 $grey-1-dark: #a0a0a0;
 $grey-2-dark: #333;
 $grey-3-dark: #1c1c1c;
@@ -27,13 +29,14 @@ $body-bg-dark: #0F1216;
 
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
-$monospaced: Menlo, Monaco, monospace !default;
+$serif-primary: 'Libre Baskerville', 'Times New Roman', 'Times', serif !default;
+$serif-secondary: 'Palatino', 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
+$sans-serif: 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', sans-serif !default;
+$monospaced: 'IBM Plex Mono', 'Menlo', 'Monaco', monospace !default;
 
-//length variables for responsive design 
+//length variables for responsive design
 //only used in tags.scss for the time being. Todo: standardize useage of sizes across the theme
+$on-small-screen: 600px;
 $on-phone: 450px;
 
 @mixin box-sizing($type: border-box) {
