@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .post {
   padding: 3rem 0;
 
@@ -14,13 +16,14 @@
 
   &-title {
     color: $default-shade;
-    @media (prefers-color-scheme: dark) {
-      color: $default-color-dark;
-    }
     font-family: $sans-serif;
     font-size: 2.5rem;
     margin: 1rem 0;
     text-align: center;
+
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
   }
 
   &-line {
@@ -63,4 +66,24 @@
     padding: 0;
     margin: 0;
   }
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 80px;
+}
+
+.comments a {
+  text-decoration: none;
+  color: $blue;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comments a:hover {
+  opacity: 0.5;
 }

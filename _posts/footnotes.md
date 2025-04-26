@@ -17,8 +17,8 @@ You can use these for technical clarifications as well[^3]. And unlike tradition
 
 The system uses HTML, CSS, and a bit of JavaScript to make the footnotes interactive. The key components are:
 
-1. Footnote references in the text with proper IDs and roles  
-2. The footnotes section at the bottom with corresponding IDs  
+1. Footnote references in the text with proper IDs and roles
+2. The footnotes section at the bottom with corresponding IDs
 3. JavaScript that shows the footnote content when you interact with the reference
 
 The markup follows accessibility standards by using proper ARIA roles. You can even navigate to the footnotes and back using the links[^4].
@@ -27,7 +27,7 @@ The markup follows accessibility standards by using proper ARIA roles. You can e
 
 Lastly, this feature was adapted (read stolen) from [this post](https://tools.simonwillison.net/colophon#footnotes-experiment.html) by Simon Willison. Some of the changes I made are:
 
-- Clicking the footnote does not take you to the footnote listed at the end of the page, instead the interaction now works as hover to preview, click to toggle/hide.[^5] 
+- Clicking the footnote does not take you to the footnote listed at the end of the page, instead the interaction now works as hover to preview, click to toggle/hide.[^5]
 - The popup content now does not contain the back-link symbol.
 
 

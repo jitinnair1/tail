@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .pagination {
   border-top: .5px solid #eee;
   font-family: $serif-secondary;
@@ -11,21 +13,23 @@
 
   span {
     color: $default-shade;
+    font-size: 1.1rem;
+
     @media (prefers-color-scheme: dark) {
       color: $default-tint;
     }
-    font-size: 1.1rem;
   }
 
   .top {
     @include transition(all .3s ease-out);
     color: $default-color;
-    @media (prefers-color-scheme: dark) {
-      color: $default-color-dark;
-    }
     font-family: $sans-serif;
     font-size: 1.1rem;
     opacity: .6;
+
+    @media (prefers-color-scheme: dark) {
+      color: $default-color-dark;
+    }
 
     &:hover {
       opacity: 1;
@@ -35,10 +39,11 @@
   .arrow {
     @include transition(all .3s ease-out);
     color: $default-color;
+    position: absolute;
+
     @media (prefers-color-scheme: dark) {
       color: $default-color-dark;
     }
-    position: absolute;
 
     &:hover,
     &:focus {
