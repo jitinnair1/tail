@@ -48,6 +48,3 @@ paginate:       5
 exclude:
   - README.md
   - LICENSE.md
-
-# Disqus (Set to your disqus id)
-disqus:
