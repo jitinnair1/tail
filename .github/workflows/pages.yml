@@ -40,10 +40,28 @@ jobs:
           bundler_ver: '>=0'         # Default is latest bundler version
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: |
-            # Download Pagefind binary for Linux
-            curl -L -o pagefind.tar.gz https://github.com/CloudCannon/pagefind/releases/download/v1.3.0/pagefind-v1.3.0-x86_64-unknown-linux-musl.tar.gz
-            tar -xzf pagefind.tar.gz
-            chmod +x pagefind
-            # Run Pagefind against the _site directory after Jekyll build
-            ./pagefind --site _site
+          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+
+      - name: Checkout gh-pages and Run Pagefind
+        run: |
+          # Checkout the gh-pages branch
+          git fetch origin gh-pages
+          git checkout gh-pages
+          
+          # Download Pagefind binary for Linux
+          curl -L -o pagefind.tar.gz https://github.com/CloudCannon/pagefind/releases/download/v1.3.0/pagefind-v1.3.0-x86_64-unknown-linux-musl.tar.gz
+          tar -xzf pagefind.tar.gz
+          chmod +x pagefind
+          
+          # Run Pagefind against the root of gh-pages
+          ./pagefind --site .
+          
+          # Commit and push the Pagefind index to gh-pages
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add .
+          git commit -m "Add Pagefind index"
+          git push origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
