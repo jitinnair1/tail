@@ -61,8 +61,8 @@ jobs:
           
           # Commit and push the Pagefind index
           cd gh-pages-dir
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Add Pagefind index"
           git push origin gh-pages
