@@ -1,7 +1,7 @@
 require 'nokogiri'
 
 module Jekyll
-  module StripFootnotesFilter
+  module IgnoreFootnotesFilter
 
     def ignore_footnotes_pagefind(raw)
       #parse the raw input as an HTML fragment with UTF-8 encoding
@@ -20,4 +20,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::StripFootnotesFilter)
+Liquid::Template.register_filter(Jekyll::IgnoreFootnotesFilter)
