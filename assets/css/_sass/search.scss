@@ -84,7 +84,7 @@
   margin-left: 2px;
   align-items: center;
   vertical-align: middle;
-  will-change: opacity;
+  will-change: opacity; //fixes the wobble of the svg
 
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark;
