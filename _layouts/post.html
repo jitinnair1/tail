@@ -31,7 +31,7 @@ layout: default
   <h1 data-pagefind-ignore class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
 
-  {{ content }}
+  {{ content | ignore_footnotes_pagefind }}
 
   {% if site.comments or page.comments %}
     {% include comments.html %}
