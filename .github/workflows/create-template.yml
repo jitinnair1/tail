@@ -24,7 +24,7 @@ jobs:
           git checkout main
           git branch -D template || true
           git checkout -b template
-          git rm -rf --cached --ignore-unmatch "_posts" "Gemfile.lock"
+          git rm -rf --cached --ignore-unmatch "_posts" "Gemfile.lock" "README.md"
           git commit -m "Update template branch"
           git push origin template -f
 
