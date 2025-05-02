@@ -55,10 +55,10 @@ jobs:
           curl -L -o pagefind.tar.gz https://github.com/CloudCannon/pagefind/releases/download/v1.3.0/pagefind-v1.3.0-x86_64-unknown-linux-musl.tar.gz
           tar -xzf pagefind.tar.gz
           chmod +x pagefind
-          
+
           # Run Pagefind against the gh-pages directory
           ./pagefind --site gh-pages-dir
-          
+
           # Commit and push the Pagefind index
           cd gh-pages-dir
           git config user.name "github-actions[bot]"
