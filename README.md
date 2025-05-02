@@ -1,8 +1,24 @@
 # Tail
 
+<p align="center">
+<img src="https://snippets.jitin.xyz/assets/img/demo/tail_composite.png" alt="Composite example of the Tail theme"/>
+</p>
+
 Tail is a minimal Jekyll blog theme heavily based on [Tale](https://github.com/chesterhow/tale) (and hence the name). Apart from the minor fixes to Tale and significant changes under the hood, this theme is designed to make it easier to maintain a blog.
 
 If you already have a bunch of files in `*.md` format, you can simply copy them to the `_posts` folder after forking this theme and making a few changes to `_config.yml`, your blog is ready to go!
+
+## Preview
+
+<details>
+<summary>Light</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/tail_light.png" alt="Preview of Tail theme in light mode"/>
+</details>
+<details>
+<summary>Dark</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/tail_dark.png" alt="Preview of Tail theme in dark mode"/>
+</details>
+
 
 ## What's new in Tail
 - Dark Mode
