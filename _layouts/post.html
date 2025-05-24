@@ -28,7 +28,7 @@ layout: default
     {% endif %}
   </div>
 
-  <h1 data-pagefind-ignore class="post-title">{{ page.title }}</h1>
+  <h1 data-pagefind-meta="title" class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
 
   {{ content | ignore_footnotes_pagefind }}
