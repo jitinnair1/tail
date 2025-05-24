@@ -31,4 +31,4 @@ How do take an already amazing theme like [Tale](https://github.com/chesterhow/t
 - Tags
 - Excerpt management
 
-[^1]: For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR!
+[^1]: There is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled.
