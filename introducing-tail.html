@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Introducing Tail | Tail</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Introducing Tail" />
+<meta name="author" content="Your Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How do take an already amazing theme like Tale and make it better? Dark-mode!1 - well, that and many more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course) For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! &#8617;" />
+<meta property="og:description" content="How do take an already amazing theme like Tale and make it better? Dark-mode!1 - well, that and many more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course) For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! &#8617;" />
+<meta property="og:site_name" content="Tail" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-06T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introducing Tail" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Your Name"},"dateModified":"2022-10-06T00:00:00+05:30","datePublished":"2022-10-06T00:00:00+05:30","description":"How do take an already amazing theme like Tale and make it better? Dark-mode!1 - well, that and many more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course) For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! &#8617;","headline":"Introducing Tail","mainEntityOfPage":{"@type":"WebPage","@id":"/tail/introducing-tail"},"url":"/tail/introducing-tail"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Search -->
+  <link rel="stylesheet" href="/tail/pagefind/pagefind-ui.css">
+  <script src="/tail/pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script src="/tail/assets/js/pagefind.js" type="text/javascript"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/tail/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+  <link rel="stylesheet" href="/tail/assets/css/syntax-default.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="/tail/assets/css/syntax-monokai.css" media="(prefers-color-scheme: dark)">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/tail/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/tail/assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/tail/assets/favicon/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="/tail/feed.xml" title="Tail" />
+
+</head>
+
+
+  <nav class="nav">
+  <div class="nav-container">
+    <a href="/tail/">
+      <h2 class="nav-title">Tail</h2>
+    </a>
+    <ul>
+      <li><a href="/tail/">Posts</a></li>
+      <li><a href="/tail/tags">Tags</a></li>
+      <li><a href="/tail/about">About</a></li>
+      <li><a href="#" id="search-toggle" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512" width="1rem" height="1rem">
+            <g>
+            <path fill="currentColor" d="M312.069,53.445c-71.26-71.26-187.194-71.26-258.454,0c-71.261,71.26-71.261,187.206,0,258.466
+                        c71.26,71.26,187.194,71.26,258.454,0S383.329,124.705,312.069,53.445z M286.694,286.536
+                        c-57.351,57.34-150.353,57.34-207.704-0.011s-57.351-150.353,0-207.693c57.351-57.351,150.342-57.351,207.693,0
+                        S344.011s45,229.174,286.694,286.536z"/>
+            <path fill="currentColor" d="M101.911,112.531c-29.357,37.725-31.801,89.631-7.321,129.702c1.877,3.087,5.902,4.048,8.978,2.182
+                        c3.065-1.888,4.037-5.903,2.16-8.978c-21.666-35.456-19.506-81.538,6.469-114.876c2.226-2.837,1.713-6.938-1.135-9.154
+                        C108.227,109.193,104.125,109.695,101.911,112.531z"/><path fill="currentColor" d="M498.544,447.722l-132.637-129.2c-7.255-7.07-18.84-6.982-26.008,0.174l-21.033,21.033
+                        c-7.156,7.156-7.234,18.742-0.153,25.986l129.19,132.636c14.346,17.324,35.542,18.35,51.917,1.964
+                        C516.216,483.951,515.857,462.068,498.544,447.722z"/>
+            </g></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- As seen here: https://www.bfoliver.com/2025/pagefind with some ideas from https://blog.4dcu.be/programming/2022/08/27/pagefind.html -->
+<div id="search-modal" class="hidden">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button id="close-search" aria-label="Close">×</button>
+    <p style="margin: 0 0 1rem; font-size: 0.875rem; color: #666;">
+      You can also use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>K</kbd> to toggle search
+    </p>
+    <div id="search" class="pagefind-ui"></div>
+  </div>
+</div>
+
+
+  <body>
+
+    <main>
+      <div data-pagefind-body class="post">
+  <div data-pagefind-ignore class="post-info">
+    <span>Written by</span>
+    
+        Your Name
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2022-10-06 00:00:00 +0530">October 06, 2022</time>
+    
+  </div>
+
+  <h1 data-pagefind-ignore class="post-title">Introducing Tail</h1>
+  <div class="post-line"></div>
+
+  <p>How do take an already amazing theme like <a href="https://github.com/chesterhow/tale">Tale</a> and make it better? Dark-mode!<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> - well, that and many more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course)</p>
+
+<!--more-->
+<h2 id="whats-new-in-tail">What’s new in Tail</h2>
+
+<ul>
+  <li>Dark Mode</li>
+  <li>Popup <a href="/tail/footnotes">Footnotes</a></li>
+  <li>Search (via <a href="https://pagefind.app">Pagefind</a>)</li>
+  <li>Comment via <a href="/tail/reply-comments">reply by email</a></li>
+  <li>Bi-directional Wiki-style linking support compatible with Obsidian</li>
+  <li>Support for posts without the <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> in post’s filename and <code class="language-plaintext highlighter-rouge">lastmod</code> dates</li>
+</ul>
+
+<h2 id="some-great-features-from-the-original-tale-with-minor-updates">Some great features from the original Tale (with minor updates)</h2>
+<ul>
+  <li>Compatible with GitHub Pages</li>
+  <li>Responsive design (looks just as good on mobile)</li>
+  <li>Syntax highlighting</li>
+  <li>Markdown and HTML text formatting</li>
+  <li>Pagination of posts</li>
+  <li>Sticky posts</li>
+  <li>Tags</li>
+  <li>Excerpt management</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+  
+    <!-- Adapted from: https://codepen.io/shannonkay/pen/WNaQWxv --> 
+<!-- link to reply by email as comments -->
+<div class="comments">
+  <a href="mailto:?subject=%5BBlog%20Reply%5D%20Introducing Tail">Reply by
+    email
+    <svg class="email-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.5 8.046H11V6.119c0-.921-.9-1.446-1.524-.894l-5.108 4.49a1.2 1.2 0 0 0 0 1.739l5.108 4.49c.624.556 1.524.027 1.524-.893v-1.928h2a3.023 3.023 0 0 1 3 3.046V19a5.593 5.593 0 0 0-1.5-10.954Z"/>
+    </svg>
+  </a>
+</div>
+<!-- End comments -->
+
+  
+
+  <div id="footnote-popup"></div>
+  <script type="module" src="/tail/assets/js/footnotes.js"></script>
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/tail/footnotes" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/tail/example-content" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+  </body>
+
+  <footer>
+  <span>
+    &copy; <time datetime="2026-01-14 21:37:26 +0530">2026</time> Your Name. Made with Jekyll using the <a href="https://github.com/jitinnair1/tail">Tail</a> theme.
+  </span>
+</footer>
+
+
+</html>

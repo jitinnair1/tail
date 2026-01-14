@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/tail/feed.xml" rel="self" type="application/atom+xml" /><link href="/tail/" rel="alternate" type="text/html" /><updated>2026-01-14T21:37:26+05:30</updated><id>/tail/feed.xml</id><title type="html">Tail</title><subtitle>Minimal Jekyll blog theme</subtitle><author><name>Your Name</name></author><entry><title type="html">Comments using Email</title><link href="/tail/reply-comments" rel="alternate" type="text/html" title="Comments using Email" /><published>2025-04-25T00:00:00+05:30</published><updated>2025-04-25T00:00:00+05:30</updated><id>/tail/reply-comments</id><content type="html" xml:base="/tail/reply-comments"><![CDATA[<p>To configure comments via on your blog, edit your <code class="language-plaintext highlighter-rouge">_config.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Comments (Reply via email)</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="na">comment_email</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1">#enter an email address where you want comment emails to be sent</span>
+</code></pre></div></div>
+<p>This adds a <code class="language-plaintext highlighter-rouge">Reply by email</code> button at the end of your posts, like so:</p>]]></content><author><name>Your Name</name></author><category term="New" /><summary type="html"><![CDATA[To configure comments via on your blog, edit your _config.yml]]></summary></entry><entry><title type="html">Search</title><link href="/tail/search" rel="alternate" type="text/html" title="Search" /><published>2025-04-25T00:00:00+05:30</published><updated>2025-04-25T00:00:00+05:30</updated><id>/tail/search</id><content type="html" xml:base="/tail/search"><![CDATA[<p>You can search through all posts by using the search from the navigation bar. This can also be toggled using <code class="language-plaintext highlighter-rouge">Ctrl</code> or <code class="language-plaintext highlighter-rouge">Cmd</code> + ‘K’. This functionality is built using <a href="https://pagefind.app">Pagefind</a>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">pagefind</code> binary is a part of the repo under <code class="language-plaintext highlighter-rouge">_bin</code> and it is run after the site is built.</p>]]></content><author><name>Your Name</name></author><category term="New" /><summary type="html"><![CDATA[You can search through all posts by using the search from the navigation bar. This can also be toggled using Ctrl or Cmd + ‘K’. This functionality is built using Pagefind.]]></summary></entry><entry><title type="html">Cleaner Theme Upgrades</title><link href="/tail/upgrades" rel="alternate" type="text/html" title="Cleaner Theme Upgrades" /><published>2025-04-25T00:00:00+05:30</published><updated>2025-04-25T00:00:00+05:30</updated><id>/tail/upgrades</id><content type="html" xml:base="/tail/upgrades"><![CDATA[<p>If you want to apply the latest updates from <code class="language-plaintext highlighter-rouge">Tale</code> onto your fork, you can use the <code class="language-plaintext highlighter-rouge">template</code> branch on the <a href="https://github.com/jitinnair/tail">GitHub repo</a>.</p>
+
+<p>This branch will always point to the lastest <code class="language-plaintext highlighter-rouge">main</code> branch but without the <code class="language-plaintext highlighter-rouge">_posts</code> folder. This is not really a seamless upgrade experience but perhaps a slighly convenient one.</p>]]></content><author><name>Your Name</name></author><category term="New" /><summary type="html"><![CDATA[If you want to apply the latest updates from Tale onto your fork, you can use the template branch on the GitHub repo.]]></summary></entry><entry><title type="html">Bidirectional Links</title><link href="/tail/bidirectional" rel="alternate" type="text/html" title="Bidirectional Links" /><published>2025-04-24T00:00:00+05:30</published><updated>2025-04-24T00:00:00+05:30</updated><id>/tail/bidirectional</id><content type="html" xml:base="/tail/bidirectional"><![CDATA[<p>You can use Obsidian-styte bidirectional links <code class="language-plaintext highlighter-rouge">[[name_of_note]]</code> and it will link to the correct post after the site is built..</p>
+
+<p>Also, check out other features like <a href="/tail/search">search</a>, <a href="/tail/footnotes">footnotes</a> and <a href="/tail/reply-comments">reply-comments</a>.</p>]]></content><author><name>Your Name</name></author><category term="New" /><summary type="html"><![CDATA[You can use Obsidian-styte bidirectional links [[ name_of_note ]] and it will link to the correct post after the site is built..]]></summary></entry><entry><title type="html">Better Footnotes</title><link href="/tail/footnotes" rel="alternate" type="text/html" title="Better Footnotes" /><published>2025-04-10T00:00:00+05:30</published><updated>2025-04-10T00:00:00+05:30</updated><id>/tail/footnotes</id><content type="html" xml:base="/tail/footnotes"><![CDATA[<p>When you write something that needs additional context or a citation, you can add a footnote<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>.</p>
+
+<p>Footnotes are helpful for providing more information without disrupting the flow of your main content. They can be used for citations, clarifications, or just to add interesting asides<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>.</p>
+
+<blockquote>
+  <p>The best footnote is one that adds context without demanding it be read. It should be there for the curious reader, not the casual one.</p>
+</blockquote>
+
+<p>You can use these for technical clarifications as well<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>. And unlike traditional print footnotes, these are interactive – try hovering over or clicking on the footnote references!</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>The system uses HTML, CSS, and a bit of JavaScript to make the footnotes interactive. The key components are:</p>
+
+<ol>
+  <li>Footnote references in the text with proper IDs and roles</li>
+  <li>The footnotes section at the bottom with corresponding IDs</li>
+  <li>JavaScript that shows the footnote content when you interact with the reference</li>
+</ol>
+
+<p>The markup follows accessibility standards by using proper ARIA roles. You can even navigate to the footnotes and back using the links<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup>.</p>
+
+<h2 id="credits">Credits</h2>
+
+<p>Lastly, this feature was adapted (read stolen) from <a href="https://tools.simonwillison.net/colophon#footnotes-experiment.html">this post</a> by Simon Willison. Some of the changes I made are:</p>
+
+<ul>
+  <li>Clicking the footnote does not take you to the footnote listed at the end of the page, instead the interaction now works as hover to preview, click to toggle/hide.<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+  <li>The popup content now does not contain the back-link symbol.</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>This is the first footnote. It provides additional information that would otherwise clutter the main text. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>This second footnote could be used for citation. For example: Smith, J. (2023). <em>The Art of Footnotes</em>. <em>Journal of Useless Knowledge</em>, 42(1), 123–145. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>The footnote system uses the <code class="language-plaintext highlighter-rouge">:target</code> CSS selector and JavaScript to enhance the user experience. This technical approach allows for both progressive enhancement and accessibility. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>The back-link (↩) takes you back to where you came from in the text, which is particularly useful in longer documents. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>The footnotes are listed at the bottom of the page only so that the footnote references are visible say when the page is printed. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Your Name</name></author><category term="New" /><summary type="html"><![CDATA[When you write something that needs additional context or a citation, you can add a footnote1. This is the first footnote. It provides additional information that would otherwise clutter the main text. &#8617;]]></summary></entry><entry><title type="html">Introducing Tail</title><link href="/tail/introducing-tail" rel="alternate" type="text/html" title="Introducing Tail" /><published>2022-10-06T00:00:00+05:30</published><updated>2022-10-06T00:00:00+05:30</updated><id>/tail/introducing-tail</id><content type="html" xml:base="/tail/introducing-tail"><![CDATA[<p>How do take an already amazing theme like <a href="https://github.com/chesterhow/tale">Tale</a> and make it better? Dark-mode!<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> - well, that and many more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course)</p>
+
+<!--more-->
+<h2 id="whats-new-in-tail">What’s new in Tail</h2>
+
+<ul>
+  <li>Dark Mode</li>
+  <li>Popup <a href="/tail/footnotes">Footnotes</a></li>
+  <li>Search (via <a href="https://pagefind.app">Pagefind</a>)</li>
+  <li>Comment via <a href="/tail/reply-comments">reply by email</a></li>
+  <li>Bi-directional Wiki-style linking support compatible with Obsidian</li>
+  <li>Support for posts without the <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> in post’s filename and <code class="language-plaintext highlighter-rouge">lastmod</code> dates</li>
+</ul>
+
+<h2 id="some-great-features-from-the-original-tale-with-minor-updates">Some great features from the original Tale (with minor updates)</h2>
+<ul>
+  <li>Compatible with GitHub Pages</li>
+  <li>Responsive design (looks just as good on mobile)</li>
+  <li>Syntax highlighting</li>
+  <li>Markdown and HTML text formatting</li>
+  <li>Pagination of posts</li>
+  <li>Sticky posts</li>
+  <li>Tags</li>
+  <li>Excerpt management</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Your Name</name></author><category term="Tail" /><summary type="html"><![CDATA[How do take an already amazing theme like Tale and make it better? Dark-mode!1 - well, that and many more changes under the hood is what led to this theme called Tail (as a hat tip to the original theme of course) For now, there is no toggle button for the dark mode. This is by design. I wanted the dark-mode to be on if the browser or system level dark-mode is enabled. Maybe, in a later version, I will add support for a dark/light toggle. Happy to accept a PR! &#8617;]]></summary></entry><entry><title type="html">Example Content</title><link href="/tail/example-content" rel="alternate" type="text/html" title="Example Content" /><published>2022-10-04T00:00:00+05:30</published><updated>2022-10-04T00:00:00+05:30</updated><id>/tail/example-content</id><content type="html" xml:base="/tail/example-content"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis.<!--more--> Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.</p>
+
+<h1 id="headers">Headers</h1>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># H1</span>
+<span class="gu">## H2</span>
+<span class="gu">### H3</span>
+<span class="gu">#### H4</span>
+<span class="gu">##### H5</span>
+<span class="gu">###### H6</span>
+</code></pre></div></div>
+
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+
+<h1 id="text-formatting">Text formatting</h1>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> <span class="gs">**Bold**</span>
+<span class="p">-</span> _Italics_
+<span class="p">-</span> ~~Strikethrough~~
+<span class="p">-</span> <span class="nt">&lt;ins&gt;</span>Underline<span class="nt">&lt;/ins&gt;</span>
+<span class="p">-</span> <span class="nt">&lt;sup&gt;</span>Superscript<span class="nt">&lt;/sup&gt;</span>
+<span class="p">-</span> <span class="nt">&lt;sub&gt;</span>Subscript<span class="nt">&lt;/sub&gt;</span>
+<span class="p">-</span> Abbreviation: <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span>
+<span class="p">-</span> Citation: <span class="nt">&lt;cite&gt;</span><span class="ni">&amp;mdash;</span> Your Name<span class="nt">&lt;/cite&gt;</span>
+</code></pre></div></div>
+
+<p>gives you:</p>
+
+<ul>
+  <li><strong>Bold</strong></li>
+  <li><em>Italics</em></li>
+  <li><del>Strikethrough</del></li>
+  <li><ins>Underline</ins></li>
+  <li><sup>Superscript</sup></li>
+  <li><sub>Subscript</sub></li>
+  <li>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></li>
+  <li>Citation: <cite>— Your Name</cite></li>
+</ul>
+
+<h1 id="lists">Lists</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> Ordered list item 1
+<span class="p">2.</span> Ordered list item 2
+<span class="p">3.</span> Ordered list item 3
+<span class="p">
+*</span> Unordered list item 1
+<span class="p">*</span> Unordered list item 2
+<span class="p">*</span> Unordered list item 3
+</code></pre></div></div>
+
+<p>look like this:</p>
+
+<ol>
+  <li>Ordered list item 1</li>
+  <li>Ordered list item 2</li>
+  <li>Ordered list item 3</li>
+</ol>
+
+<ul>
+  <li>Unordered list item 1</li>
+  <li>Unordered list item 2</li>
+  <li>Unordered list item 3</li>
+</ul>
+
+<h1 id="links">Links</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Check out tail on <span class="p">[</span><span class="nv">GitHub</span><span class="p">](</span><span class="sx">https://github.com/jitinnair1/tail</span><span class="p">)</span>.
+</code></pre></div></div>
+
+<p>give you this:</p>
+
+<p>Check out tail on <a href="https://github.com/jitinnair1/tail">GitHub</a>.</p>
+
+<h1 id="images">Images</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">An image</span><span class="p">](</span><span class="sx">url</span> <span class="nn">"Alt Text"</span><span class="p">)</span>
+
+<span class="p">![</span><span class="nv">Image with caption</span><span class="p">](</span><span class="sx">url</span> <span class="nn">"Image with caption"</span><span class="p">)</span>
+<span class="ge">_This is an image with a caption_</span>
+</code></pre></div></div>
+
+<p><img src="https://images.unsplash.com/photo-1664784805210-9fa665e2b7e9?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" alt="An image" title="An image" /></p>
+
+<p><img src="https://images.unsplash.com/photo-1527697911963-20cb424e9608?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1486&amp;q=80" alt="Image with caption" title="Image with caption" />
+<em>This is an image with a caption</em></p>
+
+<h1 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h1>
+
+<p>Use back-ticks for <code class="language-plaintext highlighter-rouge">inline code</code>. Multi-line code snippets are supported too through. Specify the language after the back-ticks for language specific syntax highlighting.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+</code></pre></div></div>
+
+<p>which will give you syntax highlighting like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s1">'redcarpet'</span>
+<span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">markdown</span><span class="p">.</span><span class="nf">to_html</span>
+</code></pre></div></div>
+
+<h2 id="to-display-line-numbers-in-codeblocks-you-can-set-them-as-an-option-in-_configyml">To display line numbers in codeblocks, you can set them as an option in <code class="language-plaintext highlighter-rouge">_config.yml</code></h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+  <span class="na">syntax_highlighter_opts</span><span class="pi">:</span>
+    <span class="na">block</span><span class="pi">:</span>
+      <span class="na">line_numbers</span><span class="pi">:</span> <span class="kc">true</span>
+
+</code></pre></div></div>
+
+<h1 id="blockquotes">Blockquotes</h1>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<h1 id="horizontal-rule--line-break">Horizontal Rule &amp; Line Break</h1>
+
+<p>Use <code class="language-plaintext highlighter-rouge">&lt;hr&gt;</code> for horizontal rules like this</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;hr&gt;</span>
+</code></pre></div></div>
+
+<p>gives you</p>
+
+<hr />
+
+<p>and <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> for line breaks:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This <span class="nt">&lt;br&gt;</span> breaks the line
+</code></pre></div></div>
+
+<p>which will give you:</p>
+
+<p>This <br /> breaks the line</p>
+
+<p><em>The end</em></p>]]></content><author><name>Your Name</name></author><category term="Old" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis.]]></summary></entry><entry><title type="html">Managing Excerpt</title><link href="/tail/managing-excerpt" rel="alternate" type="text/html" title="Managing Excerpt" /><published>2022-10-02T00:00:00+05:30</published><updated>2022-10-02T00:00:00+05:30</updated><id>/tail/managing-excerpt</id><content type="html" xml:base="/tail/managing-excerpt"><![CDATA[<p>You can customise the excerpt (the text displayed below each post on the homepage) using the <code class="language-plaintext highlighter-rouge">excerpt-separator</code>.<!--more--> Here’s how you can do so!</p>
+
+<h2 id="steps">Steps</h2>
+
+<ol>
+  <li>
+    <p>Add <code class="language-plaintext highlighter-rouge">excerpt_separator: &lt;!--more--&gt;</code> to the frontmatter of your blog post.</p>
+  </li>
+  <li>
+    <p>Insert this <code class="language-plaintext highlighter-rouge">&lt;!--more--&gt;</code> at where you would like the excerpt to cut off in your blog post.</p>
+  </li>
+</ol>
+
+<h3 id="note">Note</h3>
+
+<p>This follows <a href="https://jekyllrb.com/docs/posts/#post-excerpts">Jekyll’s recommended way of managing excerpts</a>.</p>]]></content><author><name>Your Name</name></author><category term="Old" /><summary type="html"><![CDATA[You can customise the excerpt (the text displayed below each post on the homepage) using the excerpt-separator.]]></summary></entry><entry><title type="html">Posts Without Date in Filename</title><link href="/tail/posts-without-filename" rel="alternate" type="text/html" title="Posts Without Date in Filename" /><published>2022-10-01T00:00:00+05:30</published><updated>2022-10-01T00:00:00+05:30</updated><id>/tail/posts-without-filename</id><content type="html" xml:base="/tail/posts-without-filename"><![CDATA[<p>Typically, posts in Jekyll have a <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename.</p>
+
+<!--more-->
+
+<p>Also, it become easier to export a set of <code class="language-plaintext highlighter-rouge">*.md</code> files from any note-taking app and add them to the <code class="language-plaintext highlighter-rouge">_posts</code> folder without worrying about changing the filenames.</p>
+
+<p>Tail does this by using a <a href="https://stackoverflow.com/a/68287682/9523246">small plugin</a> that changes the <code class="language-plaintext highlighter-rouge">DATE_FILENAME_MATCHER</code> for <code class="language-plaintext highlighter-rouge">_posts</code> and <code class="language-plaintext highlighter-rouge">_drafts</code> folders</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Jekyll::PostReader</span>
+    <span class="c1"># Don't use DATE_FILENAME_MATCHER so we don't need to put those stupid dates</span>
+    <span class="c1"># in the filename. Also limit to just *.markdown, so it won't process binary</span>
+    <span class="c1"># files from e.g. drags.</span>
+    <span class="k">def</span> <span class="nf">read_posts</span><span class="p">(</span><span class="n">dir</span><span class="p">)</span>
+      <span class="n">read_publishable</span><span class="p">(</span><span class="n">dir</span><span class="p">,</span> <span class="s2">"_posts"</span><span class="p">,</span> <span class="sr">/.*\.md$/</span><span class="p">)</span>
+    <span class="k">end</span>
+    <span class="k">def</span> <span class="nf">read_drafts</span><span class="p">(</span><span class="n">dir</span><span class="p">)</span>
+      <span class="n">read_publishable</span><span class="p">(</span><span class="n">dir</span><span class="p">,</span> <span class="s2">"_drafts"</span><span class="p">,</span> <span class="sr">/.*\.md$/</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+</code></pre></div></div>]]></content><author><name>Your Name</name></author><category term="New" /><summary type="html"><![CDATA[Typically, posts in Jekyll have a YYYY-MM-DD portion in the post’s filename. The individual markdown posts can be freed from this naming convention to reduce the clutter in the filename.]]></summary></entry><entry><title type="html">Pagination Post</title><link href="/tail/pagination-post" rel="alternate" type="text/html" title="Pagination Post" /><published>2022-09-20T00:00:00+05:30</published><updated>2022-09-20T00:00:00+05:30</updated><id>/tail/pagination-post</id><content type="html" xml:base="/tail/pagination-post"><![CDATA[<p>Here we see <strong>Tail’s</strong> pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file!</p>]]></content><author><name>Your Name</name></author><category term="Old" /><summary type="html"><![CDATA[Here we see Tail’s pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the _config.yml file!]]></summary></entry></feed>
